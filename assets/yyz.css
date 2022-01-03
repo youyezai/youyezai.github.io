@@ -1,3 +1,95 @@
+a{
+  color:#000000;
+}
+/*头部*/
+.header{
+  background-color: #242424;
+  border-top:none;
+}
+.header .logo {
+  padding-top: 5px;
+}
+
+.header .logo img {
+  max-height: 59px;
+}
+
+
+.header .logo i {
+  display:none;
+}
+
+.header .logo b {
+  height: 59px;
+  color:#f2f2f2;
+  line-height:59px;
+}
+/*主体背景*/
+.container{
+  background-color:#f1f5f8;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 0px 5px #f2f2f2;
+  box-sizing: border-box;
+  overflow:hidden;
+}
+/*左侧菜单*/
+.menubar{
+  border-right: 1px solid #eee;
+}
+.menu-filter svg {
+  color:#478cdc;
+}
+.menu-search svg {
+  color:#478cdc;
+}
+.menubar h4.on svg {
+  color:#478cdc;
+}
+.menubar h4.on a {
+  color:#478cdc;
+}
+.menubar h4, .menubar h5 {
+  border:1px solid #FFFFFF;
+}
+.menu-search{
+  border-left:none;
+  border-bottom: 1px solid #eee;
+}
+.menu-filter{
+  border-bottom: 1px solid #eee;
+  padding-left: 6px;
+  width: 205px;
+}
+.menu-filter input {
+  border-bottom: none;
+  width:170px;
+  text-align: left;
+  height:30px;
+}
+.menu-filter i {
+  line-height: 36px;
+  margin-top:2px;
+}
+.menu-filter:hover input {
+  border-bottom: none;
+}
+.menu-filter input:focus {
+outline: none;
+  border-bottom: none;
+}
+.menu-filter svg{
+  display:none;
+}
+.container .nav {
+  background-color: #ffffff;
+  border:none;
+}
+/*右侧内容*/
+.main-inner{
+  background-color: #ffffff;
+  border:none;
+}
 /*搜索功能*/
 .search-update input {
   background-color: #eee;
@@ -88,7 +180,7 @@ aside .back-top{
 /*markdown语法*/
 .markdown-body h1 {
   margin-top: 50px;
-  font-size: 35px;
+  font-size: 30px;
 }
 .markdown-body h2 {
   font-size: 26px;
@@ -96,19 +188,11 @@ aside .back-top{
 .markdown-body h3 {
   font-size: 22px;
 }
-.markdown-body blockquote{
-  padding:12px 12px;
-  background-color:#f0fcff;
-  border-radius:3px;
-  font-size: 14px;
-  color:#41555d;
-}
-
 .markdown-body code, .markdown-body tt {
 padding: 0;
 font-size:14px;
-background-color:#50616d;
-color: #e3f9fd;
+background-color:#f1f8ff;
+color: #0366d6;
 height:20px;
 margin:5px 3px;
 padding:3px 0px;
@@ -120,8 +204,40 @@ line-height:2.0;
   margin: 10px auto;
   display:block;
 }
-
+.markdown-body table {
+  margin-left:auto;
+  margin-right:auto;
+  width:auto;
+  display:table;
+}
 
 .markdown-body pre code {
-    font-size:14px;color:#e3f9fd;
+    font-size:14px;
+}
+
+@media screen and (max-width: 720px){
+  .header .logo img{
+    display:none;
+  }
+  .header .logo b {
+      line-height:49px;
+      height:49px;
+  }
+  .header .logo {
+    padding-top: 0;
+  }
+  .container{
+    background-color:#f1f5f8;
+    border: none;
+    border-radius: none;
+    box-shadow: none;
+    box-sizing: border-box;
+    overflow:hidden;
+  }
+  .container .nav{
+    background: #242424;
+  }
+  .menu-filter{
+    width:100%;
+  }
 }
